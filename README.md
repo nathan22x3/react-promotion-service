@@ -1,19 +1,52 @@
-# Getting Started with Create React App
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD041 -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="./src/assets/svgs/logo-text.svg" alt="Promotion Service Logo" width="300">
+  <p>
+    <em>This project is solely for educational purposes.</em>
+  </p>
+</div>
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+- [Built With](#built-with)
+- [How To Start](#how-to-start)
+- [Contact](#contact)
 
-### `yarn start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![dsa](./src/assets/images/overview.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Checkout the project design [here](https://www.figma.com/file/uMb2ZZesDdneYqGwHV3aGF/Promotion-Service).
 
-## Design screen
+## Built With
 
-Click [here](https://www.figma.com/file/uMb2ZZesDdneYqGwHV3aGF/Web-Service) to see design screen.
+- [React.js](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## How To Start
+
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/getting-started/install) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/nathan22x3/react-promotion-service.git
+
+# Navigate to project's directory
+$ cd react-promotion-service
+
+# Install dependencies
+$ yarn
+
+# Run the app
+$ yarn start
+```
+
+## Contact
+
+- GitHub [@nathan22x3](https://github.com/nathan22x3)
+- GitHub [@bachletantien](https://github.com/bachletantien)
+- GitHub [@ZweiWirlbert](https://github.com/ZweiWirlbert)

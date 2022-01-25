@@ -4,6 +4,7 @@
     "arrow-spacing": "error",
     "eqeqeq": "error",
     "no-console": "warn",
+    "no-undef": "warn",
     "no-extra-boolean-cast": "error",
     "no-extra-semi": "error",
     "no-return-await": "error",

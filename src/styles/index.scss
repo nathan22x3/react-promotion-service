@@ -6,6 +6,21 @@
 
 @layer base {
   body {
-    @apply font-display font-normal #{!important};
+    @apply font-display #{!important};
+    @apply font-normal bg-dark text-white;
+  }
+
+  h1 {
+    @apply text-2xl font-medium;
+  }
+
+  p,
+  a {
+    @apply text-base;
+  }
+
+  label,
+  small {
+    @apply text-sm text-gray-500;
   }
 }

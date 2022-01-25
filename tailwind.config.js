@@ -1,39 +1,46 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./src/components/**/*.{js,jsx,ts,tsx}'],
+  content: ['./public/index.html', './src/components/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
       display: ['SF Pro Display', ...defaultTheme.fontFamily['sans']],
     },
+    fontSize: {
+      sm: ['14px', '20px'],
+      base: ['16px', '20px'],
+      lg: ['18px', '20px'],
+      xl: ['24px', '20px'],
+      '2xl': ['26px', '20px'],
+    },
     colors: {
       inherit: 'inherit',
       transparent: 'transparent',
-      primary: '#4447E2',
+      primary: '#4447e2',
       secondary: {
-        DEFAULT: '#A86CE4',
-        light: '#F1DEFF',
-      },
-      warn: {
-        DEFAULT: '#FFA10B',
-        light: '#FFF6DE',
-      },
-      danger: {
-        DEFAULT: '#E24444',
-        light: '#FFCECE',
+        DEFAULT: '#a86ce4',
+        light: '#f1deff',
       },
       success: {
-        DEFAULT: '#50D86A',
-        light: '#DEFFE5',
+        DEFAULT: '#50d86a',
+        light: '#deffe5',
       },
-      background: '#231F20',
+      warn: {
+        DEFAULT: '#ffa10b',
+        light: '#fff6de',
+      },
+      danger: {
+        DEFAULT: '#e24444',
+        light: '#ffcece',
+      },
       gray: {
-        50: '#DDE1E8',
-        100: '#5F5F6F',
-        200: '#4B4B62',
-        300: '#2D2D3A',
-        500: '#1C1C24',
+        300: '#dde1e8',
+        400: '#a6adb1',
+        500: '#5f5f6f',
+        600: '#4b4b62',
+        700: '#2d2d3a',
       },
+      dark: '#1c1c24',
       white: '#ffffff',
     },
   },

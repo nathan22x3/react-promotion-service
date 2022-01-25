@@ -1,13 +1,14 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */
-import tw from 'twin.macro';
+// import tw from 'twin.macro';
+import { Navbar } from 'components/index';
 
-export interface AppProps {}
+interface AppProps {}
 
 const App: React.FC<AppProps> = () => {
   return (
-    <div css={tw`text-2xl`}>
-      <p>Hello</p>
+    <div>
+      <Navbar />
     </div>
   );
 };

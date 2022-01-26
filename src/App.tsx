@@ -4,6 +4,7 @@ import { Button, Navbar, TaskCard, Task } from 'components';
 import React, { useEffect, useState } from 'react';
 /** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
+import Footer from 'components/Footer';
 
 interface AppProps {}
 
@@ -34,11 +35,12 @@ const App: React.FC<AppProps> = () => {
           ))}
         </div>
         <div
-          css={tw`fixed right-8 bottom-16 z-50 flex justify-center items-center w-[50px] h-[50px] rounded-full bg-gray-700 text-gray-600 text-[36px]`}
+          css={tw`fixed right-8 bottom-24 z-50 flex justify-center items-center w-[50px] h-[50px] rounded-full bg-gray-700 text-gray-600 text-[36px]`}
         >
           <ScrollToTopIcon />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,6 @@
+/** @jsxImportSource @emotion/react */
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React from 'react';
-/** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
 
 interface NavbarItemProps {

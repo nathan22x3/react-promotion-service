@@ -55,5 +55,6 @@ module.exports = {
       '2xl': '1440px',
     },
   },
+  important: true,
   plugins: [],
 };

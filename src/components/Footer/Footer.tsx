@@ -1,9 +1,9 @@
-import React from 'react';
+/** @jsxImportSource @emotion/react */
+import { ReactComponent as TelegramIcon } from 'assets/svgs/telegram.svg';
 import { ReactComponent as TwitterIcon } from 'assets/svgs/twitter.svg';
 import { ReactComponent as VkIcon } from 'assets/svgs/vk.svg';
-import { ReactComponent as TelegramIcon } from 'assets/svgs/telegram.svg';
+import React from 'react';
 import tw from 'twin.macro';
-/** @jsxImportSource @emotion/react */
 
 interface FooterProps {}
 

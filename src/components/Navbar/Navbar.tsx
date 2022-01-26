@@ -1,9 +1,9 @@
+/** @jsxImportSource @emotion/react */
 import { ReactComponent as FaqIcon } from 'assets/svgs/faq.svg';
 import { ReactComponent as GlobeIcon } from 'assets/svgs/globe.svg';
 import { ReactComponent as GridIcon } from 'assets/svgs/grid.svg';
 import { ReactComponent as LogoText } from 'assets/svgs/logo-text.svg';
 import React from 'react';
-/** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
 import { NavbarItem, NavbarUser } from '.';
 

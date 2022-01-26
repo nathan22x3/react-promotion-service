@@ -11,7 +11,7 @@
   }
 
   h1 {
-    @apply text-2xl font-medium;
+    @apply text-2xl font-medium #{!important};
   }
 
   p,
@@ -23,5 +23,11 @@
   label,
   small {
     @apply text-sm text-gray-500;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-screen-2xl px-28 mx-auto;
   }
 }

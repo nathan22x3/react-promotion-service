@@ -30,7 +30,7 @@ interface NavbarProps {}
 const Navbar: React.FC<NavbarProps> = () => {
   return (
     <nav css={tw`bg-gray-800`}>
-      <div css={tw`flex justify-between items-center max-w-screen-2xl h-20 px-28 mx-auto`}>
+      <div className="wrapper" css={tw`flex justify-between items-center h-20`}>
         <a href="/" css={tw`flex items-center`}>
           <LogoText />
         </a>

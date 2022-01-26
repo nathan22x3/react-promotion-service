@@ -1,12 +1,12 @@
+/** @jsxImportSource @emotion/react */
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React from 'react';
-/** @jsxImportSource @emotion/react */
 import tw, { TwStyle } from 'twin.macro';
 
-type ButtonVariant = 'filled' | 'stroke';
+type ButtonVariant = 'primary' | 'stroke';
 
 const variants: Record<ButtonVariant, TwStyle> = {
-  filled: tw`px-5 bg-gray-700`,
+  primary: tw`px-5 bg-gray-700`,
   stroke: tw`border-2 border-primary bg-transparent`,
 };
 

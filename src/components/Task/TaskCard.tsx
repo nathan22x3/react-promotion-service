@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import { ReactComponent as CommentsIcon } from 'assets/svgs/comments.svg';
 import { ReactComponent as FollowersIcon } from 'assets/svgs/followers.svg';
@@ -6,7 +7,6 @@ import { ReactComponent as MoreIcon } from 'assets/svgs/more.svg';
 import { ReactComponent as ViewsIcon } from 'assets/svgs/views.svg';
 import { Button } from 'components';
 import React from 'react';
-/** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
 
 export interface Task {
@@ -48,7 +48,7 @@ const TaskCard: React.FunctionComponent<TaskCardProps> = (props) => {
         </div>
         <MoreIcon css={tw`mt-[5px]`} />
       </div>
-      <img css={tw`w-full h-auto rounded-[15px]`} src={image} draggable={false} />
+      <img css={tw`w-full h-auto rounded-[15px]`} src={image} draggable={false} loading="lazy" />
       <Button label="Perform a task" />
     </div>
   );

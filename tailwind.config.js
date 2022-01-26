@@ -13,6 +13,9 @@ module.exports = {
       xl: ['24px', '20px'],
       '2xl': ['26px', '20px'],
     },
+    boxShadow: {
+      DEFAULT: '15px 15px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+    },
     colors: {
       inherit: 'inherit',
       transparent: 'transparent',

@@ -4,6 +4,7 @@ import { ReactComponent as ArrowDownIcon } from 'assets/svgs/arrow-down.svg';
 import { ReactComponent as CoinStackIcon } from 'assets/svgs/coin-stack.svg';
 import { ReactComponent as PlusIcon } from 'assets/svgs/plus.svg';
 import { ButtonIcon } from 'components';
+import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 
 const NavbarUser = () => {
@@ -17,8 +18,10 @@ const NavbarUser = () => {
         </div>
       </div>
       <div css={tw`flex items-center gap-x-2.5`}>
-        <img src={avatarDefault} alt="avatar" css={tw`w-10 h-auto`} />
-        <ArrowDownIcon css={tw`text-gray-500`} />
+        <Link to="/profile" css={tw`flex items-center`}>
+          <img src={avatarDefault} alt="avatar" css={tw`w-10 h-auto`} />
+          <ArrowDownIcon css={tw`text-gray-500`} />
+        </Link>
       </div>
     </div>
   );

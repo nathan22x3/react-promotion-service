@@ -1,10 +1,8 @@
-import React from 'react';
 /** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
 import { Button, Input } from 'components';
-interface ProfileProps {}
 
-const Profile: React.FC<ProfileProps> = () => {
+const Profile = () => {
   return (
     <div css={tw`grid grid-cols-3 gap-y-20`}>
       <div></div>
@@ -63,7 +61,5 @@ const Profile: React.FC<ProfileProps> = () => {
     </div>
   );
 };
-
-Profile.defaultProps = {};
 
 export default Profile;

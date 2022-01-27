@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
-import React from 'react';
 import tw from 'twin.macro';
 
 interface NavbarItemProps {
@@ -9,9 +8,7 @@ interface NavbarItemProps {
   link: string;
 }
 
-const NavbarItem: React.FC<NavbarItemProps> = (props) => {
-  const { title, icon, link } = props;
-
+const NavbarItem = ({ title, icon, link }: NavbarItemProps) => {
   return (
     <a href={link} css={tw`flex gap-x-2.5 items-center text-gray-500`}>
       <span>{icon}</span>
@@ -19,7 +16,5 @@ const NavbarItem: React.FC<NavbarItemProps> = (props) => {
     </a>
   );
 };
-
-NavbarItem.defaultProps = {};
 
 export default NavbarItem;

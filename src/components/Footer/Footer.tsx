@@ -2,12 +2,9 @@
 import { ReactComponent as TelegramIcon } from 'assets/svgs/telegram.svg';
 import { ReactComponent as TwitterIcon } from 'assets/svgs/twitter.svg';
 import { ReactComponent as VkIcon } from 'assets/svgs/vk.svg';
-import React from 'react';
 import tw from 'twin.macro';
 
-interface FooterProps {}
-
-const Footer: React.FC<FooterProps> = () => {
+const Footer = () => {
   return (
     <footer css={tw`font-medium bg-gray-800 text-gray-500`}>
       <div className="wrapper" css={tw`flex justify-between py-7  h-20`}>
@@ -22,7 +19,5 @@ const Footer: React.FC<FooterProps> = () => {
     </footer>
   );
 };
-
-Footer.defaultProps = {};
 
 export default Footer;

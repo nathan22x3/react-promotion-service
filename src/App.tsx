@@ -2,12 +2,10 @@
 import { ReactComponent as ScrollToTopIcon } from 'assets/svgs/arrowhead-up.svg';
 import { ReactComponent as PlusIcon } from 'assets/svgs/plus.svg';
 import { Button, ButtonIcon, Footer, Navbar, Task, TaskCard } from 'components';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import tw from 'twin.macro';
 
-interface AppProps {}
-
-const App: React.FC<AppProps> = () => {
+const App = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
 
   useEffect(() => {
@@ -39,7 +37,5 @@ const App: React.FC<AppProps> = () => {
     </>
   );
 };
-
-App.defaultProps = {};
 
 export default App;

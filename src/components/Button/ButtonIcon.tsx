@@ -29,29 +29,23 @@ interface ButtonIconProps extends React.ButtonHTMLAttributes<HTMLButtonElement> 
   border?: ButtonBorder;
 }
 
-const ButtonIcon: React.FC<ButtonIconProps> = (props) => {
-  const { icon, variant, size, border, onClick, ...rest } = props;
-
+const ButtonIcon = ({
+  icon,
+  variant = 'default',
+  size = 'sm',
+  border = 'rounded',
+  onClick,
+  ...rest
+}: ButtonIconProps) => {
   return (
     <button
-      css={[
-        tw`flex justify-center items-center`,
-        variants[variant as ButtonVariant],
-        sizes[size as ButtonSize],
-        borders[border as ButtonBorder],
-      ]}
+      css={[tw`flex justify-center items-center`, variants[variant], sizes[size], borders[border]]}
       {...{ onClick }}
       {...rest}
     >
       {icon}
     </button>
   );
-};
-
-ButtonIcon.defaultProps = {
-  variant: 'default',
-  size: 'sm',
-  border: 'rounded',
 };
 
 export default ButtonIcon;

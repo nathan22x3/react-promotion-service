@@ -4,12 +4,9 @@ import { ReactComponent as ArrowDownIcon } from 'assets/svgs/arrow-down.svg';
 import { ReactComponent as CoinStackIcon } from 'assets/svgs/coin-stack.svg';
 import { ReactComponent as PlusIcon } from 'assets/svgs/plus.svg';
 import { ButtonIcon } from 'components';
-import React from 'react';
 import tw from 'twin.macro';
 
-interface NavbarUserProps {}
-
-const NavbarUser: React.FC<NavbarUserProps> = () => {
+const NavbarUser = () => {
   return (
     <div css={tw`flex gap-x-2.5`}>
       <div css={tw`flex items-center gap-x-5 p-1.5 rounded-[15px] bg-gray-700`}>
@@ -26,7 +23,5 @@ const NavbarUser: React.FC<NavbarUserProps> = () => {
     </div>
   );
 };
-
-NavbarUser.defaultProps = {};
 
 export default NavbarUser;

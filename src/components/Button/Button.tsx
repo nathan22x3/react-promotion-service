@@ -16,14 +16,12 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
 }
 
-const Button: React.FC<ButtonProps> = (props) => {
-  const { label, icon, variant, onClick, ...rest } = props;
-
+const Button = ({ label, icon, variant = 'primary', onClick, ...rest }: ButtonProps) => {
   return (
     <button
       css={[
         tw`flex justify-center items-center gap-x-1 rounded-[15px] p-[15px] duration-200 hover:bg-primary`,
-        variants[variant as ButtonVariant],
+        variants[variant],
       ]}
       {...{ onClick }}
       {...rest}
@@ -32,10 +30,6 @@ const Button: React.FC<ButtonProps> = (props) => {
       <span>{label}</span>
     </button>
   );
-};
-
-Button.defaultProps = {
-  variant: 'stroke',
 };
 
 export default Button;

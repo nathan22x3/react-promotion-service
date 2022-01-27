@@ -3,7 +3,6 @@ import { ReactComponent as FaqIcon } from 'assets/svgs/faq.svg';
 import { ReactComponent as GlobeIcon } from 'assets/svgs/globe.svg';
 import { ReactComponent as GridIcon } from 'assets/svgs/grid.svg';
 import { ReactComponent as LogoText } from 'assets/svgs/logo-text.svg';
-import React from 'react';
 import tw from 'twin.macro';
 import { NavbarItem, NavbarUser } from '.';
 
@@ -25,9 +24,7 @@ const items = [
   },
 ];
 
-interface NavbarProps {}
-
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar = () => {
   return (
     <nav css={tw`bg-gray-800`}>
       <div className="wrapper" css={tw`flex justify-between items-center h-20`}>
@@ -44,7 +41,5 @@ const Navbar: React.FC<NavbarProps> = () => {
     </nav>
   );
 };
-
-Navbar.defaultProps = {};
 
 export default Navbar;

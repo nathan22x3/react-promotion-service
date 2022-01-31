@@ -19,7 +19,7 @@ const NavbarUser = () => {
       </div>
       <div css={tw`flex items-center gap-x-2.5`}>
         <Link to="/profile" css={tw`flex items-center`}>
-          <img src={avatarDefault} alt="avatar" css={tw`w-10 h-auto`} />
+          <img src={avatarDefault} alt="avatar" css={tw`w-10 h-auto rounded-full`} />
           <ArrowDownIcon css={tw`text-gray-500`} />
         </Link>
       </div>

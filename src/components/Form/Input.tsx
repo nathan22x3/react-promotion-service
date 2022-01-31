@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
+import { InputHTMLAttributes } from 'react';
 import tw from 'twin.macro';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
 

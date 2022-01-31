@@ -4,12 +4,12 @@
     "arrow-spacing": "error",
     "eqeqeq": "error",
     "no-console": "warn",
-    "no-undef": "warn",
+    "no-undef": "off",
     "no-extra-boolean-cast": "error",
     "no-extra-semi": "error",
     "no-return-await": "error",
     "no-self-assign": "error",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
     "no-var": "error",
     "react/react-in-jsx-scope": "off"
   }

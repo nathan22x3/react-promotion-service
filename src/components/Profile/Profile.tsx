@@ -1,13 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { Button, Container, Input } from 'components';
 import tw from 'twin.macro';
+import { AvatarUploader } from '.';
 
 const Profile = () => {
   return (
     <Container title="Profile">
-      <div css={tw`grid grid-cols-3 gap-y-20 mb-20`}>
-        <div></div>
-        <div css={tw`flex flex-col gap-y-5`}>
+      <div css={tw`flex gap-x-20`}>
+        <div css={tw`flex-1`}>
+          <AvatarUploader />
+        </div>
+        <div css={tw`flex flex-col gap-y-5 w-[430px]`}>
           <Input
             label="Dribbble Link"
             id="dribbble"
@@ -58,7 +61,7 @@ const Profile = () => {
             <Button label="Save changes" variant="stroke" />
           </div>
         </div>
-        <div></div>
+        <div css={tw`flex-1`}></div>
       </div>
     </Container>
   );

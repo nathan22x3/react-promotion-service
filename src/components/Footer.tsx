@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer css={tw`font-medium bg-gray-800 text-gray-500`}>
       <div className="wrapper" css={tw`flex justify-between py-7  h-20`}>
-        <div css={tw`flex gap-5`}>
+        <div css={tw`flex gap-5 items-center`}>
           <TwitterIcon />
           <VkIcon />
           <TelegramIcon />

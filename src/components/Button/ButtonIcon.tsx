@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
-import React from 'react';
+import { ButtonHTMLAttributes } from 'react';
 import tw, { TwStyle } from 'twin.macro';
 
 type ButtonVariant = 'default' | 'primary';
@@ -22,7 +22,7 @@ const borders: Record<ButtonBorder, TwStyle> = {
   circle: tw`w-[50px] h-[50px] rounded-full`,
 };
 
-interface ButtonIconProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonIconProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon: EmotionJSX.Element;
   variant?: ButtonVariant;
   size?: ButtonSize;
@@ -34,13 +34,11 @@ const ButtonIcon = ({
   variant = 'default',
   size = 'sm',
   border = 'rounded',
-  onClick,
   ...rest
 }: ButtonIconProps) => {
   return (
     <button
       css={[tw`flex justify-center items-center`, variants[variant], sizes[size], borders[border]]}
-      {...{ onClick }}
       {...rest}
     >
       {icon}

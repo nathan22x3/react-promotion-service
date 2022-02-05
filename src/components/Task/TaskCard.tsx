@@ -6,7 +6,6 @@ import { ReactComponent as LikeIcon } from 'assets/svgs/like.svg';
 import { ReactComponent as MoreIcon } from 'assets/svgs/more.svg';
 import { ReactComponent as ViewsIcon } from 'assets/svgs/views.svg';
 import { Button } from 'components';
-import React from 'react';
 import tw from 'twin.macro';
 
 export interface Task {
@@ -16,7 +15,7 @@ export interface Task {
   image: string;
 }
 
-interface TaskCardProps extends Task {}
+type TaskCardProps = Task;
 
 type TaskType = 'like' | 'comment' | 'views' | 'followers';
 
@@ -27,9 +26,7 @@ const icons: Record<TaskType, EmotionJSX.Element> = {
   views: <ViewsIcon />,
 };
 
-const TaskCard: React.FunctionComponent<TaskCardProps> = (props) => {
-  const { name, type, avatar, image } = props;
-
+const TaskCard = ({ name, type, avatar, image }: TaskCardProps) => {
   return (
     <div
       className="hover:shadow hover:shadow-dark"
@@ -53,7 +50,5 @@ const TaskCard: React.FunctionComponent<TaskCardProps> = (props) => {
     </div>
   );
 };
-
-TaskCard.defaultProps = {};
 
 export default TaskCard;

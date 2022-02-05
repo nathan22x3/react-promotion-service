@@ -1,16 +1,20 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "arrow-spacing": "error",
     "eqeqeq": "error",
     "no-console": "warn",
-    "no-undef": "warn",
     "no-extra-boolean-cast": "error",
     "no-extra-semi": "error",
     "no-return-await": "error",
     "no-self-assign": "error",
-    "no-unused-vars": "warn",
-    "no-var": "error",
-    "react/react-in-jsx-scope": "off"
+    "no-var": "error"
   }
 }

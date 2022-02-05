@@ -4,7 +4,7 @@ import { ReactComponent as TwitterIcon } from 'assets/svgs/twitter-filled.svg';
 import { ReactComponent as VkIcon } from 'assets/svgs/vk-filled.svg';
 import { Button, Container, Input } from 'components';
 import tw from 'twin.macro';
-import { AvatarUploader, SocialMedia } from '.';
+import { AvatarUploader, SocialMedia, Statistic } from '.';
 
 const SOCIAL_MEDIA_ACCOUNTS = [
   { name: 'Facebook', icon: <FacebookIcon />, isLoggedIn: false },
@@ -78,7 +78,10 @@ const Profile = () => {
             <Button label="Save changes" variant="stroke" />
           </div>
         </div>
-        <div css={tw`flex-1`}></div>
+        <div css={tw`flex-1`}>
+          <p css={tw`font-medium text-gray-500 mb-2.5`}>Personal Statistic</p>
+          <Statistic />
+        </div>
       </div>
     </Container>
   );

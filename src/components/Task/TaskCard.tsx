@@ -15,7 +15,7 @@ export interface Task {
   image: string;
 }
 
-interface TaskCardProps extends Task {}
+type TaskCardProps = Task;
 
 type TaskType = 'like' | 'comment' | 'views' | 'followers';
 

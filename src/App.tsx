@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { Layout, Profile, TaskList } from 'components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
